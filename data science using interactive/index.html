@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Seasonal Sales Analysis</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>E-Commerce Seasonal Sales Analysis</header>
+
+  <div class="container">
+    <h2>Quarterly Sales Overview (2025)</h2>
+
+    <form id="salesForm">
+      <label>Winter:</label>
+      <input type="number" id="winter" placeholder="Enter sales in ₹L" required />
+      <label>Spring:</label>
+      <input type="number" id="spring" placeholder="Enter sales in ₹L" required />
+      <label>Summer:</label>
+      <input type="number" id="summer" placeholder="Enter sales in ₹L" required />
+      <label>Autumn:</label>
+      <input type="number" id="autumn" placeholder="Enter sales in ₹L" required />
+      <button type="submit">Analyze Sales</button>
+    </form>
+
+    <canvas id="salesChart"></canvas>
+
+    <div class="summary">
+      <div class="card">
+        <h3>Highest Season</h3>
+        <p id="maxSeason">-</p>
+      </div>
+      <div class="card">
+        <h3>Lowest Season</h3>
+        <p id="minSeason">-</p>
+      </div>
+      <div class="card">
+        <h3>Total Sales</h3>
+        <p id="totalSales">-</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
